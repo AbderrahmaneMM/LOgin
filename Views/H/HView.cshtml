@@ -1,0 +1,23 @@
+﻿@model LOgin.Models.Hmodel
+@using LOgin.Models;
+
+<h1>Homme View</h1>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+    <h3>UserName :</h3>
+    <form method="post" action="/H/Lview" />
+    <input name="name" type="text" value=@Model.Name />
+    <h3>Password :</h3>
+    <input name="password" type="password"
+           value=@Model.Password />
+
+    <input name="log" type="submit" value="Log in" />
+
+</body>
+
+</html>
+
